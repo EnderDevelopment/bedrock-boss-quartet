@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Four Realms Bosses",
+    "description": "Four custom bosses with unique health and combat abilities.",
+    "uuid": "53a82c56-11d8-4a18-9b9b-920501e419df",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 26, 45]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "55f09f8f-2d7a-45bd-8b63-9e3983c032ac",
+      "version": [1, 0, 0]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": { "identifier": "fourrealms:void_reaver", "is_spawnable": true, "is_summonable": true, "is_experimental": false },
+    "components": {
+      "minecraft:type_family": { "family": ["void_reaver", "monster", "mob"] },
+      "minecraft:health": { "value": 260, "max": 260 },
+      "minecraft:collision_box": { "width": 1.1, "height": 2.4 },
+      "minecraft:movement": { "value": 0.5 },
+      "minecraft:follow_range": { "value": 64 },
+      "minecraft:attack": { "damage": 22 },
+      "minecraft:knockback_resistance": { "value": 0.55 },
+      "minecraft:movement.basic": {},
+      "minecraft:navigation.walk": { "can_path_over_water": true, "avoid_water": false },
+      "minecraft:physics": {},
+      "minecraft:pushable": { "is_pushable": false, "is_pushable_by_piston": true },
+      "minecraft:behavior.nearest_attackable_target": { "priority": 1, "within_radius": 64, "entity_types": [{ "filters": { "test": "is_family", "subject": "other", "value": "player" }, "max_dist": 64 }] },
+      "minecraft:behavior.melee_attack": { "priority": 2, "track_target": true, "reach_multiplier": 2.0 },
+      "minecraft:behavior.look_at_player": { "priority": 6, "look_distance": 24 },
+      "minecraft:behavior.random_stroll": { "priority": 7, "speed_multiplier": 1.2 },
+      "minecraft:behavior.look_around": { "priority": 8 },
+      "minecraft:spell_effects": { "add_effects": [{ "effect": "speed", "duration": 2147483647, "amplifier": 1, "visible": false }, { "effect": "resistance", "duration": 2147483647, "amplifier": 0, "visible": false }] },
+      "minecraft:nameable": {},
+      "minecraft:despawn": { "despawn_from_distance": {} }
+    }
+  }
+}
